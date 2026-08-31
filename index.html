@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reign SMP | The Age of Seven</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Press+Start+2P&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+        <div class="nav-logo">REIGN SMP</div>
+
+        <div class="nav-links">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#owners">OWNERS</a>
+            <a href="#developer">DEVELOPER</a>
+            <a href="#admins">ADMINS</a>
+            <a href="#kingdoms">KINGDOMS</a>
+            <a href="#lore">LORE</a>
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-orb orb-one"></div>
+        <div class="hero-orb orb-two"></div>
+        <div class="hero-orb orb-three"></div>
+
+        <div class="hero-content">
+
+            <img
+                src="images/logo/reign-logo.png"
+                alt="Reign SMP Logo"
+                class="reign-logo"
+            >
+
+            <p class="eyebrow">
+                PRIVATE MINECRAFT SURVIVAL REALM
+            </p>
+
+            <h1>REIGN</h1>
+
+            <h2>THE AGE OF SEVEN</h2>
+
+            <p class="hero-description">
+                Seven kingdoms. One realm. Countless stories.
+            </p>
+
+            <a href="#about" class="main-button">
+                ENTER THE REALM
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section id="about" class="section">
+
+        <div class="section-heading">
+            <span>THE REALM</span>
+            <h2>ABOUT REIGN SMP</h2>
+        </div>
+
+        <div class="about-container">
+
+            <p>
+                <strong>Reign SMP</strong> is a private Minecraft
+                survival realm divided among seven kingdoms.
+                Each kingdom has its own territory, culture,
+                architecture, ambitions, and history.
+            </p>
+
+            <p>
+                The world of Reign is shaped by the people who
+                inhabit it. Kingdoms rise, borders change,
+                alliances are formed, and rivalries develop
+                throughout the realm.
+            </p>
+
+            <p>
+                The seven kingdoms are connected by a shared
+                world, but each follows its own path.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- OWNERS -->
+
+    <section id="owners" class="section">
+
+        <div class="section-heading">
+            <span>FOUNDERS OF THE REALM</span>
+            <h2>OWNERS</h2>
+        </div>
+
+        <div class="people-grid">
+
+            <div class="person-card" onclick="showPerson('yushiro')">
+
+                <img
+                    src="images/skins/yushiro.png"
+                    alt="Yushiro Minecraft Skin"
+                    class="skin-image"
+                >
+
+                <h3>Yushiro</h3>
+
+                <p>Owner</p>
+
+                <img
+                    src="images/pfp/yushiro.jpg"
+                    alt="Yushiro Profile Picture"
+                    class="pfp-image"
+                >
+
+                <span class="click-text">VIEW LORE</span>
+
+            </div>
+
+
+            <div class="person-card" onclick="showPerson('lynx')">
+
+                <img
+                    src="images/skins/lynx.png"
+                    alt="Lynx Minecraft Skin"
+                    class="skin-image"
+                >
+
+                <h3>Lynx</h3>
+
+                <p>Owner & Developer</p>
+
+                <img
+                    src="images/pfp/lynx.jpg"
+                    alt="Lynx Profile Picture"
+                    class="pfp-image"
+                >
+
+                <span class="click-text">VIEW LORE</span>
+
+            </div>
+
+
+            <div class="person-card" onclick="showPerson('kenzeki')">
+
+                <img
+                    src="images/skins/kenzeki.png"
+                    alt="Kenzeki Minecraft Skin"
+                    class="skin-image"
+                >
+
+                <h3>Kenzeki</h3>
+
+                <p>Owner</p>
+
+                <img
+                    src="images/pfp/kenzeki.jpg"
+                    alt="Kenzeki Profile Picture"
+                    class="pfp-image"
+                >
+
+                <span class="click-text">VIEW LORE</span>
+
+            </div>
+
+        </div>
+
+
+        <div id="person-info" class="person-info">
+
+            <button class="close-button" onclick="closePerson()">
+                X
+            </button>
+
+            <img
+                id="person-pfp"
+                class="person-display-pfp"
+                src=""
+                alt=""
+            >
+
+            <h2 id="person-name"></h2>
+
+            <h3 id="person-role"></h3>
+
+            <p id="person-description"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- DEVELOPER -->
+
+    <section id="developer" class="section">
+
+        <div class="section-heading">
+            <span>BUILDER OF THE REALM</span>
+            <h2>DEVELOPER</h2>
+        </div>
+
+        <div class="developer-container">
+
+            <div class="person-card" onclick="showPerson('lynx')">
+
+                <img
+                    src="images/skins/lynx.png"
+                    alt="Lynx Minecraft Skin"
+                    class="skin-image"
+                >
+
+                <h3>Lynx</h3>
+
+                <p>Developer</p>
+
+                <img
+                    src="images/pfp/lynx.jpg"
+                    alt="Lynx Profile Picture"
+                    class="pfp-image"
+                >
+
+                <span class="click-text">VIEW LORE</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ADMINS -->
+
+    <section id="admins" class="section">
+
+        <div class="section-heading">
+            <span>KEEPERS OF REIGN</span>
+            <h2>ADMINS</h2>
+        </div>
+
+        <div class="people-grid">
+
+            <div class="person-card" onclick="showPerson('shanie')">
+
+                <img
+                    src="images/skins/shanie.png"
+                    alt="Shanie Minecraft Skin"
+                    class="skin-image"
+                >
+
+                <h3>Shanie</h3>
+
+                <p>Administrator</p>
+
+                <img
+                    src="images/pfp/shanie.jpg"
+                    alt="Shanie Profile Picture"
+                    class="pfp-image"
+                >
+
+                <span class="click-text">VIEW LORE</span>
+
+            </div>
+
+
+            <div class="person-card" onclick="showPerson('yukiyo')">
+
+                <img
+                    src="images/skins/yukiyo.png"
+                    alt="Yukiyo Minecraft Skin"
+                    class="skin-image"
+                >
+
+                <h3>Yukiyo</h3>
+
+                <p>Administrator</p>
+
+                <img
+                    src="images/pfp/yukiyo.jpg"
+                    alt="Yukiyo Profile Picture"
+                    class="pfp-image"
+                >
+
+                <span class="click-text">VIEW LORE</span>
+
+            </div>
+
+
+            <div class="person-card" onclick="showPerson('rein')">
+
+                <img
+                    src="images/skins/rein.png"
+                    alt="Rein Minecraft Skin"
+                    class="skin-image"
+                >
+
+                <h3>Rein</h3>
+
+                <p>Administrator</p>
+
+                <img
+                    src="images/pfp/rein.jpg"
+                    alt="Rein Profile Picture"
+                    class="pfp-image"
+                >
+
+                <span class="click-text">VIEW LORE</span>
+
+            </div>
+
+
+            <div class="person-card" onclick="showPerson('kyle')">
+
+                <img
+                    src="images/skins/kyle.png"
+                    alt="Kyle Minecraft Skin"
+                    class="skin-image"
+                >
+
+                <h3>Kyle</h3>
+
+                <p>Administrator</p>
+
+                <img
+                    src="images/pfp/kyle.jpg"
+                    alt="Kyle Profile Picture"
+                    class="pfp-image"
+                >
+
+                <span class="click-text">VIEW LORE</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- KINGDOMS -->
+
+    <section id="kingdoms" class="section">
+
+        <div class="section-heading">
+            <span>THE SEVEN KINGDOMS OF REIGN</span>
+            <h2>KINGDOMS</h2>
+        </div>
+
+        <div class="kingdom-grid">
+
+            <div class="kingdom-card" onclick="showKingdom('valthera')">
+                <img
+                    src="images/teams/valthera.jpg"
+                    alt="Valthera"
+                    class="kingdom-logo"
+                >
+                <span class="kingdom-number">I</span>
+                <h3>VALTHERA</h3>
+                <p>THE GOLDEN DOMINION</p>
+            </div>
+
+
+            <div class="kingdom-card" onclick="showKingdom('eldoria')">
+                <img
+                    src="images/teams/eldoria.jpg"
+                    alt="Eldoria"
+                    class="kingdom-logo"
+                >
+                <span class="kingdom-number">II</span>
+                <h3>ELDORIA</h3>
+                <p>THE ANCIENT REALM</p>
+            </div>
+
+
+            <div class="kingdom-card" onclick="showKingdom('veylcrest')">
+                <img
+                    src="images/teams/veylcrest.jpg"
+                    alt="Veylcrest"
+                    class="kingdom-logo"
+                >
+                <span class="kingdom-number">III</span>
+                <h3>VEYLCREST</h3>
+                <p>THE SHADOW COURT</p>
+            </div>
+
+
+            <div class="kingdom-card" onclick="showKingdom('aetherion')">
+                <img
+                    src="images/teams/aetherion.jpg"
+                    alt="Aetherion"
+                    class="kingdom-logo"
+                >
+                <span class="kingdom-number">IV</span>
+                <h3>AETHERION</h3>
+                <p>THE SKYBOUND KINGDOM</p>
+            </div>
+
+
+            <div class="kingdom-card" onclick="showKingdom('dravenfall')">
+                <img
+                    src="images/teams/dravenfall.jpg"
+                    alt="Dravenfall"
+                    class="kingdom-logo"
+                >
+                <span class="kingdom-number">V</span>
+                <h3>DRAVENFALL</h3>
+                <p>THE IRON LEGION</p>
+            </div>
+
+
+            <div class="kingdom-card" onclick="showKingdom('solmire')">
+                <img
+                    src="images/teams/solmire.jpg"
+                    alt="Solmire"
+                    class="kingdom-logo"
+                >
+                <span class="kingdom-number">VI</span>
+                <h3>SOLMIRE</h3>
+                <p>THE ASHEN ORDER</p>
+            </div>
+
+
+            <div class="kingdom-card" onclick="showKingdom('verdantis')">
+                <img
+                    src="images/teams/verdantis.jpg"
+                    alt="Verdantis"
+                    class="kingdom-logo"
+                >
+                <span class="kingdom-number">VII</span>
+                <h3>VERDANTIS</h3>
+                <p>THE VERDANT CROWN</p>
+            </div>
+
+        </div>
+
+
+        <div id="kingdom-info" class="kingdom-info">
+
+            <button class="close-button" onclick="closeKingdom()">
+                X
+            </button>
+
+            <img
+                id="kingdom-display-logo"
+                src=""
+                alt=""
+                class="kingdom-display-logo"
+            >
+
+            <h2 id="kingdom-name"></h2>
+
+            <h3 id="kingdom-title"></h3>
+
+            <p id="kingdom-description"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- LORE -->
+
+    <section id="lore" class="section">
+
+        <div class="section-heading">
+            <span>HISTORY OF THE REALM</span>
+            <h2>THE LORE OF REIGN</h2>
+        </div>
+
+        <div class="lore-container">
+
+            <div class="lore-entry">
+                <div class="lore-number">I</div>
+
+                <div>
+                    <h3>THE UNCLAIMED LAND</h3>
+
+                    <p>
+                        Before the seven kingdoms were established,
+                        the land that would become Reign was vast and
+                        largely unexplored. Mountains divided the
+                        territories, forests covered the wilderness,
+                        and ancient structures hinted that others had
+                        lived there long before the current inhabitants.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="lore-entry">
+                <div class="lore-number">II</div>
+
+                <div>
+                    <h3>THE FOUNDING OF REIGN</h3>
+
+                    <p>
+                        As the first settlers arrived, they began
+                        establishing permanent homes across the realm.
+                        Instead of forming a single nation, the settlers
+                        divided into seven distinct groups. These groups
+                        eventually became the seven kingdoms of Reign.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="lore-entry">
+                <div class="lore-number">III</div>
+
+                <div>
+                    <h3>THE SEVEN KINGDOMS</h3>
+
+                    <p>
+                        Valthera, Eldoria, Veylcrest, Aetherion,
+                        Dravenfall, Solmire, and Verdantis established
+                        their own territories. Each kingdom developed
+                        different traditions, architecture, resources,
+                        and ambitions while remaining connected to the
+                        same world.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="lore-entry">
+                <div class="lore-number">IV</div>
+
+                <div>
+                    <h3>THE AGE OF KINGDOMS</h3>
+
+                    <p>
+                        With the seven territories established,
+                        civilization spread throughout Reign.
+                        Roads connected distant settlements, castles
+                        rose above the landscape, resources became
+                        valuable, and relationships between kingdoms
+                        began to shape the history of the realm.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="lore-entry">
+                <div class="lore-number">V</div>
+
+                <div>
+                    <h3>THE BALANCE OF REIGN</h3>
+
+                    <p>
+                        No kingdom controls the entire realm.
+                        Every kingdom possesses something the others
+                        may need. Trade, cooperation, competition,
+                        and political decisions determine the balance
+                        between the seven powers.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="lore-entry">
+                <div class="lore-number">VI</div>
+
+                <div>
+                    <h3>THE STORY CONTINUES</h3>
+
+                    <p>
+                        Reign has no predetermined ending. The future
+                        of the realm depends on the actions of its
+                        kingdoms and inhabitants. New settlements may
+                        appear, alliances may change, and the history
+                        of the seven kingdoms will continue to be
+                        written inside the world of Reign SMP.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h2>REIGN SMP</h2>
+
+        <p>THE AGE OF SEVEN</p>
+
+        <div class="footer-line"></div>
+
+        <p>A private Minecraft survival realm.</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
